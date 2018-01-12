@@ -1,0 +1,155 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+    <link rel="stylesheet" type="text/css" href="DC.css">
+
+<style>
+
+	.border{border:1px solid #000; vertical-align: baseline; margin:0 0 8px;}
+
+.wrapper{width:1140px; margin:0 auto;}
+
+.header{width:1100px; height:147px; margin-left:20px; }
+
+.masthead{width:1100px; background-image:url("images/chi.jpg"); 
+                        background-position: center;}
+
+.branding{width:1100px; height:85px;}
+.branding h1{float:left; }
+.site-description{clear:right; float:right;width:430px; }
+.top-menu-container ul{float:right;}
+.top-menu-container li{float:left; list-style:none; border-right:1px solid #000;
+                        display:inline-block;}
+#searchform{float:right;}
+
+.navbar{float:left; width:100%; height:61px; margin:0 auto;}
+.navbar li {float:left; list-style:none; border-right:1px solid #dfdfdf;}
+.navbar li a {padding:0 18px;}
+
+
+button:hover {
+    opacity: 0.8;
+}
+
+	* {
+    box-sizing: border-box;
+}
+
+body {
+    margin: 0;
+}
+	/* Create three unequal columns that floats next to each other */
+		.column {
+			float: left;
+			padding: 10px;
+			height: 700px; /* Should be removed. Only for demonstration */
+		}
+
+		/* Left and right column */
+		.column.side {
+			width: 25%;
+		}
+		#rt_img{margin-right:20px;}
+
+		/* Middle column */
+		.column.middle {
+			background-image:url("images/bcki.jpeg") no-repeat center fixed;
+			width: 50%;
+		}
+
+		/* Clear floats after the columns */
+		.row:after {
+			content: "";
+			display: table;
+			clear: both;
+
+		}
+
+		/* Style the footer */
+		.footer {
+			
+			padding: 10px;
+			text-align: center;
+		}
+
+		/* Responsive layout - makes the three columns stack on top of each other instead of next to each other */
+		@media (max-width: 600px) {
+			.column.side, .column.middle {
+				width: 100%;
+			}
+		}
+</style>
+</head>
+<body>
+    <div class="wrapper">
+        <div class="header">
+            <div class="masthead">
+                <div class="branding border">
+                <h1 class="border">
+                    <span><a title="DC RAINMAKER">
+                            <img src="logo-opt.png" width="435" height="69">
+                    </a></span>
+                </h1>
+                <div class="site-description border">
+                    <div class="top-menu-container">
+                        <ul>
+                            <li>About me</li>
+                            <li>press</li>
+                            <li>contact</li>
+                            <li>Advertise</li>
+                        </ul>
+                    </div>
+                    <form role="search" method="get" id="searchform" action="">
+                        <div>
+                            <input type="text" value="Enter Keyword" id="s">
+                            <input type="submit" value=">" id="searchsubmit">
+                        </div>
+                    </form>
+                	</div>
+                </div>
+                <div class="navbar border">
+                    <div>
+                        <ul>
+                            <li><a>HOME</a></li>
+                            <li><a>BLOG</a></li>
+                            <li><a>PRODUCT REVIEWS</a></li>
+                            <li><a>2018 GUIDES</a></li>
+                            <li><a>HOW-TO&TIPS</a></li>
+                            <li><a>RACE</a></li>
+                            <li><a>TRAVEL</a></li>
+                            <li><a>SEOUL</a></li>
+                            <li><a>QUEUE</a></li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+		<div class="row">
+		  <div class="column side" >Left News
+		  <img src="images/rocks-EFFECTS.jpg" width="280px" height="600px"></div>
+		  <div class="column middle" style="background-color:#000000;">Main
+		  </div>
+		  <div class="column side" >Right Menu
+		  
+		  <a href="loginForm.jsp" onclick="" style="width:auto;">Login</a>
+		  <img id="rt_img" src="images/rocks-EFFECTS.jpg" width="280px" height="600px">
+		 <!--  <div id="id01" class="modal"></div> -->
+		  </div>
+		</div>
+
+		<div class="footer">
+		  <p>
+		  <img src="images/chi.jpg" width="1120px">
+		  </p>
+		</div>
+        
+    </div>    <!-- end wrapper -->
+    
+    
+</body>
+</html>
